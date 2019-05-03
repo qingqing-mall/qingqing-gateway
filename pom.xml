@@ -37,6 +37,7 @@
 
         <!-- Dependency versions -->
         <jhipster-dependencies.version>2.0.29</jhipster-dependencies.version>
+        <qingqing-dependencies.version>1.0-SNAPSHOT</qingqing-dependencies.version>
         <!-- The spring-boot version should match the one managed by
         https://mvnrepository.com/artifact/io.github.jhipster/jhipster-dependencies/${jhipster-dependencies.version} -->
         <spring-boot.version>2.0.7.RELEASE</spring-boot.version>
@@ -99,9 +100,9 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>io.github.jhipster</groupId>
-                <artifactId>jhipster-dependencies</artifactId>
-                <version>${jhipster-dependencies.version}</version>
+                <groupId>com.liaoyb.qingqing</groupId>
+                <artifactId>qingqing-dependencies</artifactId>
+                <version>${qingqing-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -110,10 +111,10 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>io.github.jhipster</groupId>
-            <artifactId>jhipster-framework</artifactId>
-        </dependency>
+	    <dependency>
+		    <groupId>com.liaoyb.qingqing</groupId>
+		    <artifactId>qingqing-framework</artifactId>
+	    </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
